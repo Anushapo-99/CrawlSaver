@@ -1,0 +1,12 @@
+### File: .gitignore
+_pycache_/
+*.pyc
+*.pyo
+*.pyd
+env/
+build/
+dist/
+*.egg-info/
+*.sqlite
+checkpoint.txt
+
