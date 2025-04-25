@@ -119,9 +119,13 @@ class CrawlSaver:
             This method will continue prompting until a valid response is given.
             Valid responses are 'y', 'yes', 'n', or 'no' (case-insensitive).
         """
-
+        checkpoint = self.load_checkpoint()
+        scraped = checkpoint.get("scraped", 0) if checkpoint else 0
+        total = checkpoint.get("total", "unknown") if checkpoint else "unknown"
+        
         while True:
-            response = input("📝 Do you want to resume from the last checkpoint? (y/n): ").strip().lower()
+            response = input("📊 You have already scraped {scraped} out of {total} URLs. "
+                         "Do you want to resume (y) or start from beginning (n)? ").strip().lower()
             if response in ['y', 'yes']:
                 print("✅ Resuming from last checkpoint.")
                 return True
