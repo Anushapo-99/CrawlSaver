@@ -8,7 +8,7 @@ CrawlSaver is a lightweight Python library that helps web scrapers automatically
 
 ✅Checkpoint Management: Resume from the last saved URL, page number, or ID.
 
-✅Flexible Storage Options: Supports text files and SQLite.
+✅Flexible Storage Options: Supports text files and json file.
 
 ✅Multi-framework Integration: Works with Requests, Playwright, Scrapy, and Selenium.
 
