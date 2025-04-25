@@ -78,6 +78,19 @@ SQLite database storage - we can collect urls and store data in SQLite database
 ✔ Researchers collecting large datasets without manual checkpointing
 
 
+**📁 Example Scripts – Easy Integration Guides**
+
+To help you get started quickly, the CrawlSaver/examples/ folder includes ready-to-run scripts that demonstrate how to integrate CrawlSaver into different web scraping workflows. Each script is tailored to a specific framework and showcases automatic checkpointing in action:
+
+   playwright_example.py – Shows how to integrate CrawlSaver with a Playwright scraper, perfect for dynamic websites.
+
+   requests_example.py – Demonstrates usage with a basic Requests-based scraper, ideal for simple and fast scraping tasks.
+
+   selenium_example.py – A complete example using Selenium on a paginated website, including resume logic after interruptions.
+
+   scrapy_example.py – Outlines the planned integration approach for Scrapy, giving an idea of how middleware integration will work.
+
+These examples are designed to be copy-paste friendly, helping you integrate CrawlSaver into your scraper with minimal effort.
 
 
 
