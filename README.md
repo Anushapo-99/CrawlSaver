@@ -41,7 +41,7 @@ Storage Type	|   Status	      |      Description
 
 JSON File	   |  Available	    |   Simple file-based storage (default).
 
-SQLite	      |  Available	    |   More scalable for large projects.
+csv file      |  Available    |   Simple file-based storage (default).
 
 
 **🛠 Supported Frameworks**
@@ -62,6 +62,8 @@ Selenium & Scrapy Integration – Native helpers for these frameworks.
 Distributed Scraping Support – Multi-machine checkpointing.
 
 Custom Serialization – Support for custom data formats.
+
+SQLite database storage - we can collect urls and store data in SQLite database
 
 
 
