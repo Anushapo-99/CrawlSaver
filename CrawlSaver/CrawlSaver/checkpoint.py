@@ -1,3 +1,5 @@
+"""
+    CrawlSaver - A library for managing web scraping interruptions."""
 import os
 import json
 
