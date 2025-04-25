@@ -1,5 +1,4 @@
-from CrawlSaver.checkpoint import CrawlSaver, SQLiteSaver
-  # Add SQLiteSaver import
+from CrawlSaver.checkpoint import CrawlSaver
 from .integrations.requests import RequestsSaver
 from .integrations.playwright import PlaywrightSaver
 from .integrations.scrapy import ScrapySaver
@@ -33,29 +32,6 @@ __all__ = ["CrawlSaver", "SQLiteSaver", "RequestsSaver", "PlaywrightSaver", "Scr
     """
 
 
-"SQLiteSaver"
-
-"""
-    SQLite implementation of CrawlSaver that stores crawl state in a SQLite database.
-    
-    This implementation provides persistent storage of crawl data using SQLite,
-    offering better performance and reliability for larger crawls.
-    
-    Attributes:
-        db_path (str): Path to the SQLite database file
-        table_prefix (str): Prefix for table names to allow multiple crawls in one database
-        connection (sqlite3.Connection): SQLite database connection
-        
-    Methods:
-        initialize_db(): Creates necessary tables if they don't exist
-        close(): Closes the database connection
-        vacuum(): Optimizes the database by removing deleted entries
-        
-    Additional functionality:
-        - Transaction support for batch operations
-        - Indexing for faster URL lookups
-        - Metadata storage for crawl statistics and configuration
-    """
 
 "RequestsSaver"
 
