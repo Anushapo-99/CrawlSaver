@@ -2,7 +2,7 @@
 Example script demonstrating CrawlSaver integration with Playwright
 for scraping a paginated website with resume capability.
 """
-
+# This script uses Playwright to scrape book data from a paginated website.
 import asyncio
 from playwright.async_api import async_playwright
 from CrawlSaver import CrawlSaver
